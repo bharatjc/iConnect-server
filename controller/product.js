@@ -57,10 +57,6 @@ async function updateProduct(req, res) {
   res.send("Product updated successfully!");
 }
 
-function getMessage(req, res) {
-  res.send("Hello guys!");
-}
-
 async function deleteProduct(req, res) {
   try {
     const productId = req.params.id;
@@ -110,5 +106,4 @@ module.exports = {
   updateProduct,
   deleteProduct,
   fetchData,
-  getMessage,
 };

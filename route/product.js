@@ -4,7 +4,6 @@ const {
   updateProduct,
   deleteProduct,
   fetchData,
-  getMessage,
 } = require("../controller/product");
 const {
   checkAuthentication,
@@ -13,7 +12,6 @@ const {
 const router = express.Router();
 
 router.get("/product", fetchData);
-router.get("/productMessage", getMessage);
 router.post("/product", checkAuthentication, isSeller, createProduct);
 router.put("/product", checkAuthentication, isSeller, updateProduct);
 router.delete("/product/:id", checkAuthentication, isSeller, deleteProduct);
