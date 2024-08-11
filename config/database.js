@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/ecommerce-server")
+  .connect(
+    "mongodb+srv://bharat:2h1r1tjung@bharat.ysbba.mongodb.net/?retryWrites=true&w=majority&appName=Bharat"
+  )
   .then(() => console.log("Connected!"));
