@@ -2,6 +2,6 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://Bharat:2h1r1tjung@cluster0.t2vg6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://bharat:2h1r1tjung@bharat.ysbba.mongodb.net/iConnect-server?retryWrites=true&w=majority&appName=Bharat"
   )
   .then(() => console.log("Connected!"));
