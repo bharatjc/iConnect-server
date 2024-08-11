@@ -1,7 +1,4 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose
-  .connect(
-    "mongodb+srv://bharat:2h1r1tjung@bharat.ysbba.mongodb.net/iConnect-server?retryWrites=true&w=majority&appName=Bharat"
-  )
-  .then(() => console.log("Connected!"));
+mongoose.connect(process.env.MONGO_URL).then(() => console.log("Connected!"));
