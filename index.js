@@ -21,6 +21,6 @@ app.use("/api", authRoute);
 
 app.use("/api", productRoute);
 
-app.listen(3000, () => {
+app.listen(3000, "0.0.0.0", () => {
   console.log("Server is running");
 });
